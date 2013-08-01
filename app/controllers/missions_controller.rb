@@ -1,6 +1,6 @@
 class MissionsController < ApplicationController
   before_action :set_mission, only: [:show, :edit, :update]
-  before_action :require_login, only: [:new, :create, :update, :edit]
+  before_action :require_login, only: [:create]
 
   # GET /missions
   # GET /missions.json
